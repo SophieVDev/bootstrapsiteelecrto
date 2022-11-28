@@ -81,6 +81,86 @@ padding: 5px;
     color: blue !important;
     }
 
+    .megaMenu  a{
+        color: white;
+        text-decoration: none;
+        transition: 0.15s;
+    }
+    
+    .megaMenu  a:hover{
+        color:var(--color-dark-link);
+    }
+    
+    .megaMenu  li{
+        list-style: none;
+    }
+    .megaMenu .megaMenu-categorie{
+        margin: 15px 0px;
+        font-size: 20px;
+    }
+    
+    .megaMenu .megaMenu-categorie .megaMenu-categorie-content{
+        width: fit-content;
+        margin: auto;
+    }
+    
+    .megaMenu .megamenu-categorie-title{
+        color:var(--color-dark-link);
+        font-size: 25px;
+        font-weight:bold;
+        transition: 0.15s;
+    }
+    
+    .megaMenu .megamenu-categorie-title::after{
+        content: '>';
+        margin-left: 5px;
+        transition: 0.15s;
+    }
+    
+    .megaMenu .megamenu-categorie-title:hover{
+        color:white;
+    }
+    .megaMenu .megamenu-categorie-title:hover::after{
+        margin-left: 10px;
+    }
+    
+    /* sous menu*/
+    .megaMenu .megaMenu-categorie ul li{
+        font-weight: bolder;
+    }
+    /*sous sous menu*/
+    .megaMenu .megaMenu-categorie ul li ul li {
+        font-weight: normal;    
+    }
+    .megaMenu .megaMenu-categorie ul li ul{
+        border-left: solid 1px gray;
+        margin-bottom: 10px;
+    }
+
+    #navbarSupportedContent{
+        width: 100%;
+    }
+    
+    .menu-item-colored{
+        text-decoration: none;
+        display: block;
+        font-size: 20px;
+    }
+    
+    .menu-item-colored::after{
+        width: 1rem;
+        content: "";
+        display: block;
+        margin-top: 5px;
+        height: 2px;
+        background: #5770ff;
+        transition: width 0.2s ease-in-out;
+    }
+    
+    .menu-item-colored:hover::after{
+        width: 100%;
+    }
+
     .list-buttons{
         display: flex;
         flex-wrap: wrap;
@@ -250,3 +330,32 @@ display: none;
 }
 
 
+@media screen and (min-width: 768px){
+    .navbarLine{
+        width: auto;
+    }
+    .nav-item {
+        padding: 10px;
+    }
+} 
+
+@media screen and (min-width: 992px){
+
+    .nav-item a{
+        font-size: 1.5em;
+    }
+} 
+
+@media screen and (max-width: 768px){
+    .navbarLine{
+        width: 100%;
+    }
+    .nav-item {
+        padding: 3px;
+    }
+    .list-categorie{
+        justify-content: flex-start;
+    }
+
+
+}

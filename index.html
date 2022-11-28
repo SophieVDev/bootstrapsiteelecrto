@@ -9,42 +9,127 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <title>Document</title>
 </head>
-<body class="bg-dark">
-   <header id="header">
-    <nav class="navbar navbar-expand-lg text-bg-dark">
-        <div class="offcanvas-header container ">
-            <div>
-          <a class="title-header navbar-brand" href="#">
-            <img style="width:150px;" src="/img/frandroid.svg" alt="">
-          </a>
-        </div>
-          <button class="navbar-toggler text-bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+<body class="bg-dark text-light">
+  <header id="header">
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container">
+        <div class="navbarLine navbar navbar-dark">
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
-              </li>
-            </ul>
-            <div class="col social-links fw-bold text-end">
-                <i class="bi bi-facebook"></i>
-                <i class="bi bi-twitter"></i>
-                <i class="bi bi-instagram"></i>
-              </div>
+          
+          <a class="navbar-brand mx-3" href="#">
+            <img style="width: 200px;" src="https://www.frandroid.com/wp-content/themes/humanoid-redesign/assets/images/2019-redesign/logos/frandroid.svg"/>
+          </a>
+        </div>
+        
+        <div class="navbarLine navbar">
+          <div class="nav-item ">
+            <a href="#" class="menu-item-colored menuAlwaysShow text-info">Actus</a>
+          </div>
+          <div class="nav-item ">
+            <a href="#" class="menu-item-colored menuAlwaysShow text-danger">Tests</a>
+          </div>
+          <div class="nav-item">
+            <a href="#" class="menu-item-colored menuAlwaysShow text-success">Bons plans</a>
+          </div>
+          <div class="nav-item">
+            <a href="#" class="menu-item-colored menuAlwaysShow text-warning">Tutos</a>
+          </div>
+          <div class="nav-item">
+            <a href="#" class="menu-item-colored menuAlwaysShow text-primary">Guides</a>
           </div>
         </div>
-      </nav>
-   </header> 
+        <div class="offcanvas offcanvas-start text-bg-dark" id="navbarSupportedContent">
+          <div class="offcanvas-header container">
+            <div>
+              <button type="button" class="btn-close btn-close-white me-2" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              <img style="width: 200px;" src="https://www.frandroid.com/wp-content/themes/humanoid-redesign/assets/images/2019-redesign/logos/frandroid.svg"/>
+            </div>
+            <div class="social-links text-primary">
+              <i class="bi bi-twitter"></i>
+              <i class="bi bi-instagram"></i>
+              <i class="bi bi-facebook"></i>
+              <i class="bi bi-rss"></i>
+              <i class="bi bi-youtube"></i>
+              <i class="bi bi-snapchat"></i>
+              <i class="bi bi-twitch"></i>
+            </div>
+          </div>
+          <div class="offcanvas-body container">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 megaMenu">
+            <div class="megaMenu-categorie">
+              <div class="megaMenu-categorie-content">
+                <a href="#" class="megamenu-categorie-title">Titre</a>
+                <ul>
+                  <li><a href="#">Sous menu</a></li>
+                  <li>
+                    <ul>
+                      <li><a href="#">Sous sous menu</a></li>
+                      <li><a href="#">Sous sous menu</a></li>
+                      <li><a href="#">Sous sous menu</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Liens</a></li>
+                  <li><a href="#">Liens</a></li>
+                  <li><a href="#">Liens</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="megaMenu-categorie">
+              <div class="megaMenu-categorie-content">
+                <a href="#" class="megamenu-categorie-title">Titre</a>
+                <ul>
+                  <li><a href="#">Sous menu</a></li>
+                  <li>
+                    <ul>
+                      <li><a href="#">Sous sous menu</a></li>
+                      <li><a href="#">Sous sous menu</a></li>
+                      <li><a href="#">Sous sous menu</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Liens</a></li>
+                  <li><a href="#">Liens</a></li>
+                  <li><a href="#">Liens</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="megaMenu-categorie">
+              <div class="megaMenu-categorie-content">
+                <a href="#" class="megamenu-categorie-title">Titre</a>
+              </div>
+            </div>
+            <div class="megaMenu-categorie">
+              <div class="megaMenu-categorie-content">
+                <a href="#" class="megamenu-categorie-title">Titre</a>
+                <ul>
+                  <li><a href="#">Sous menu</a></li>
+                  <li>
+                    <ul>
+                      <li><a href="#">Sous sous menu</a></li>
+                      <li><a href="#">Sous sous menu</a></li>
+                      <li><a href="#">Sous sous menu</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="megaMenu-categorie">
+              <div class="megaMenu-categorie-content">
+                <a href="#" class="megamenu-categorie-title">Titre</a>
+                <ul>
+                  <li><a href="#">Sous menu</a></li>
+                  <li><a href="#">Liens</a></li>
+                  <li><a href="#">Liens</a></li>
+                  <li><a href="#">Liens</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
 
 <main class="container">
     <div class="list-categorie text-center">
